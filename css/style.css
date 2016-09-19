@@ -1,9 +1,7 @@
 .paragraphe {
   color: blue;
   font-size: 30px;
-  text-align: center; }
-
-p {
-  font: Helvetica, sans-serif; }
+  text-align: center;
+  font-family: arial; }
 
 /*# sourceMappingURL=style.css.map */

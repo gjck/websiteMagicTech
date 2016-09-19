@@ -1,15 +1,10 @@
 $mainColor: blue;
-$mainFont : Helvetica, sans-serif;
+$mainFont : arial;
 
 .paragraphe
 {
   color: $mainColor;
   font-size: 30px;
   text-align: center;
-  // font : $mainFont;
-}
-
-p
-{
-  font : $mainFont;
+  font-family : $mainFont;
 }
