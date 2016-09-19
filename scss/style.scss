@@ -6,5 +6,10 @@ $mainFont : Helvetica, sans-serif;
   color: $mainColor;
   font-size: 30px;
   text-align: center;
+  // font : $mainFont;
+}
+
+p
+{
   font : $mainFont;
 }
