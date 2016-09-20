@@ -1,10 +1,39 @@
-$mainColor: blue;
+//Variables
+$mainColor: white;
 $mainFont : arial;
 
+//CSS
 .paragraphe
 {
   color: $mainColor;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
+  vertical-align: middle;
   font-family : $mainFont;
 }
+
+#accueilTexte
+{
+  position: absolute;
+  width: 30%;
+  height : 10%;
+  right : 5%;
+}
+
+
+/*
+#accueilTexte
+{
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  font-weight: 100;
+  background: rgba(0,0,0,0.3);
+  color: white;
+  padding: 2rem;
+  width: 33%;
+  margin: 2rem;
+  float: right;
+  font-size: 1.2rem;
+}
+*/
+
+@import "_videoBackGround.scss";

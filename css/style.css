@@ -1,7 +1,81 @@
+@charset "UTF-8";
 .paragraphe {
-  color: blue;
-  font-size: 30px;
+  color: white;
+  font-size: 20px;
   text-align: center;
+  vertical-align: middle;
   font-family: arial; }
+
+#accueilTexte {
+  position: absolute;
+  width: 30%;
+  height: 10%;
+  right: 5%; }
+
+/*
+#accueilTexte
+{
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  font-weight: 100;
+  background: rgba(0,0,0,0.3);
+  color: white;
+  padding: 2rem;
+  width: 33%;
+  margin: 2rem;
+  float: right;
+  font-size: 1.2rem;
+}
+*/
+#video-fond {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover; }
+
+/*
+#video-fond {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+#video-fond > video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+// 1. Pas de support d'object-fit
+@media (min-aspect-ratio: 16/9) {
+  #video-fond > video {
+    height: 300%;
+    top: -100%;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  #video-fond > video {
+    width: 300%;
+    left: -100%;
+  }
+}
+// 2. En cas de support d'object-fit, écrase les règles en (1)
+@supports (object-fit: cover) {
+  #video-fond > video {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+}
+*/
 
 /*# sourceMappingURL=style.css.map */
