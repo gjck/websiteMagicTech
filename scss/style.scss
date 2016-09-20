@@ -1,5 +1,5 @@
 //Variables
-$mainColor: white;
+$mainColor: black;
 $mainFont : arial;
 
 //CSS
@@ -10,6 +10,12 @@ $mainFont : arial;
   text-align: center;
   vertical-align: middle;
   font-family : $mainFont;
+}
+
+.background
+{
+  z-index: -99;
+  opacity : 0.3;
 }
 
 #accueilTexte
