@@ -32,7 +32,8 @@ nav {
 footer {
   position: absolute;
   bottom: 2%;
-  width: 100%; }
+  width: 100%;
+  z-index: 1; }
   footer ul {
     position: absolute;
     text-align: center; }
