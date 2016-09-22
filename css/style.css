@@ -29,6 +29,25 @@ nav {
       nav ul li a:hover {
         color: white; }
 
+footer {
+  position: absolute;
+  bottom: 2%;
+  width: 100%; }
+  footer ul {
+    position: absolute;
+    text-align: center; }
+    footer ul li {
+      display: inline-block;
+      margin: 5px; }
+      footer ul li a {
+        font-family: arial; }
+      footer ul li a:link {
+        color: black; }
+      footer ul li a:visited {
+        color: black; }
+      footer ul li a:hover {
+        color: white; }
+
 .background {
   z-index: 1;
   opacity: 0.7;
