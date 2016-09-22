@@ -58,6 +58,45 @@ nav
   }
 }
 
+footer
+{
+  position : absolute;
+  bottom: 2%;
+  width : 100%;
+
+  ul
+  {
+    position : absolute;
+    text-align: center;
+
+    li
+    {
+      display: inline-block;
+      margin : 5px;
+
+      a
+      {
+        font-family: $mainFont;
+      }
+
+      a:link
+      {
+        color : $mainColor;
+      }
+
+      a:visited
+      {
+        color : $mainColor;
+      }
+
+      a:hover
+      {
+        color : white;
+      }
+    }
+  }
+}
+
 .background
 {
   z-index: 1;
