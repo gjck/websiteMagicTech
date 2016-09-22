@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2016-09-22 10:24:42
+/* Smarty version 3.1.30, created on 2016-09-22 10:37:43
   from "/Applications/MAMP/htdocs/MagicTech/html/index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_57e3954a0ecd86_63552559',
+  'unifunc' => 'content_57e398578e64b3_70740465',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '873e8b43f9eabe152f3d9dc9f5e11dbfd4d33f59' => 
     array (
       0 => '/Applications/MAMP/htdocs/MagicTech/html/index.html',
-      1 => 1474532616,
+      1 => 1474532810,
       2 => 'file',
     ),
   ),
@@ -22,12 +22,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:html/footer.html' => 1,
   ),
 ),false)) {
-function content_57e3954a0ecd86_63552559 (Smarty_Internal_Template $_smarty_tpl) {
+function content_57e398578e64b3_70740465 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
   <head>
-    <title> </title>
+    <title> Magic Tech </title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -58,20 +58,9 @@ function content_57e3954a0ecd86_63552559 (Smarty_Internal_Template $_smarty_tpl)
       </video>
     </div>
 
-<<<<<<< HEAD:html/index.html
-    <nav>
-      <ul>
-        <li><a href="html/connaitreMagicTech.html">Nous connaître</a></li>
-        <li><a href="html/projets.html">Nos projets</a></li>
-        <li><a href="html/devis.html">Devis</a></li>
-        <li><a href="html/contact.html">Contact</a></li>
-      <ul>
-    </nav>
-=======
     <?php $_smarty_tpl->_subTemplateRender("file:html/nav.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
->>>>>>> 447254b1f5f337b55cf5acf76638e2d92497db73:html/index.html
 
     <section id="milieuAccueil">
       <img src="ressources/logoMT.png" alt="logoMagicTech" id="logoMagicTech"/>
