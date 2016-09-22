@@ -1,4 +1,13 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "AldotheApache";
+  src: url("../ressources/fonts/AldotheApache.ttf"); }
+@font-face {
+  font-family: "Aero";
+  src: url("../ressources/fonts/Aero.ttf"); }
+@font-face {
+  font-family: "Neuropolitical";
+  src: url("../ressources/fonts/neuropolitical.ttf"); }
 nav {
   width: 100%;
   height: 20%;
@@ -21,13 +30,14 @@ nav {
       display: inline-block;
       margin: 5px; }
       nav ul li a {
-        font-family: arial; }
+        font-family: "Neuropolitical";
+        text-shadow: 2px 2px #ffffff; }
       nav ul li a:link {
         color: black; }
       nav ul li a:visited {
         color: black; }
       nav ul li a:hover {
-        color: white; }
+        color: #3399FF; }
 
 footer {
   position: absolute;
@@ -44,17 +54,19 @@ footer {
       display: inline-block;
       margin: 5px; }
       footer ul li a {
-        font-family: arial; }
+        font-family: "Neuropolitical";
+        font-size: 10px;
+        text-shadow: 1px 1px #ffffff; }
       footer ul li a:link {
         color: black; }
       footer ul li a:visited {
         color: black; }
       footer ul li a:hover {
-        color: white; }
+        color: #3399FF; }
 
 .background {
   z-index: 1;
-  opacity: 0.7;
+  opacity: 0.6;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -102,6 +114,7 @@ footer {
 #titreAccueil {
   display: inline-block;
   text-align: left;
+  text-shadow: 4px -2px #ffffff;
   position: absolute;
   top: 0;
   margin-top: 10px;
@@ -110,10 +123,52 @@ footer {
   z-index: 2;
   width: 40%;
   height: 40%;
-  font-size: 50px;
-  font-family: arial; }
+  font-size: 80px;
+  font-family: "Aero"; }
 
 #sousTitreAccueil {
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+  text-align: left;
+  text-shadow: 2px -1px #ffffff;
+  margin-top: 3%;
+  margin-left: 30px;
+  z-index: 2;
+  width: 50%;
+  height: 50px;
+  font-size: 15px;
+  font-family: "Neuropolitical";
+  font-style: italic; }
+
+#placementLogoHeader {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 2;
+  width: 30%;
+  height: 100px; }
+  #placementLogoHeader img {
+    float: left;
+    display: inline-block;
+    height: 100%;
+    width: auto; }
+
+#titreHeader {
+  display: inline-block;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  z-index: 2;
+  width: 40%;
+  height: 40%;
+  font-size: 25px;
+  font-family: "Aero"; }
+
+#sousTitreHeader {
   display: inline-block;
   position: absolute;
   top: 30%;
@@ -121,9 +176,9 @@ footer {
   margin-top: 10px;
   margin-left: 30px;
   z-index: 2;
-  width: 50%;
+  width: 65%;
   height: 50px;
-  font-size: 20px;
+  font-size: 15px;
   font-family: arial;
   font-style: italic; }
 
