@@ -9,11 +9,11 @@
   font-family: "Neuropolitical";
   src: url("../ressources/fonts/neuropolitical.ttf"); }
 nav {
-  width: 100%;
-  height: 20%;
-  position: absolute;
-  top: 0;
-  right: 0;
+  width: 60%;
+  height: 100px;
+  margin-left: 4%;
+  display: inline-block;
+  vertical-align: top;
   z-index: 2;
   /*
   background: rgba(255,255,255,$opaciteDegrade);
@@ -23,8 +23,8 @@ nav {
   background: linear-gradient(rgba(0,0,0,$opaciteDegrade), rgba(125,125,125,$opaciteDegrade), rgba(255,255,255,$opaciteDegrade));
   */ }
   nav ul {
-    position: absolute;
-    right: 2%;
+    display: inline-block;
+    margin-left: 20%;
     list-style: none; }
     nav ul li {
       display: inline-block;
@@ -40,8 +40,7 @@ nav {
         color: #3399FF; }
 
 footer {
-  position: absolute;
-  bottom: 5%;
+  display: inline-block;
   width: 100%;
   height: 10%;
   z-index: 1; }
@@ -64,6 +63,32 @@ footer {
       footer ul li a:hover {
         color: #3399FF; }
 
+#footerAccueil {
+  display: inline-block;
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  height: 10%;
+  z-index: 1; }
+  #footerAccueil ul {
+    margin-left: 10%;
+    margin-right: 10%;
+    bottom: 2%;
+    text-align: center; }
+    #footerAccueil ul li {
+      display: inline-block;
+      margin: 5px; }
+      #footerAccueil ul li a {
+        font-family: "Neuropolitical";
+        font-size: 10px;
+        text-shadow: 1px 1px #ffffff; }
+      #footerAccueil ul li a:link {
+        color: black; }
+      #footerAccueil ul li a:visited {
+        color: black; }
+      #footerAccueil ul li a:hover {
+        color: #3399FF; }
+
 .background {
   z-index: 1;
   opacity: 0.6;
@@ -84,7 +109,9 @@ footer {
   overflow: hidden; }
 
 .centrePage {
-  display: inline-block;
+  display: block;
+  margin-top: 150px;
+  z-index: 0;
   height: 2000px;
   width: 100%; }
 
@@ -147,15 +174,17 @@ footer {
   font-style: italic; }
 
 header {
+  display: block;
   width: 100%;
-  height: 20%; }
+  height: 150px;
+  right: 0;
+  z-index: 1; }
 
 #placementLogoHeader {
-  position: absolute;
-  left: 20px;
-  top: 20px;
+  display: inline-block;
+  vertical-align: top;
   z-index: 2;
-  width: 30%;
+  width: 35%;
   height: 100px; }
   #placementLogoHeader img {
     float: left;
@@ -166,8 +195,6 @@ header {
 #titreHeader {
   display: inline-block;
   text-align: left;
-  position: absolute;
-  top: 0;
   margin-top: 10px;
   margin-left: 30px;
   margin-bottom: 10px;
@@ -179,8 +206,6 @@ header {
 
 #sousTitreHeader {
   display: inline-block;
-  position: absolute;
-  top: 30%;
   text-align: left;
   margin-top: 10px;
   margin-left: 30px;

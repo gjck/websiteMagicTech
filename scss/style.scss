@@ -14,11 +14,11 @@ $opaciteDegrade : 0.4;
 //CSS
 nav
 {
-  width : 100%;
-  height : 20%;
-  position : absolute;
-  top : 0;
-  right : 0;
+  width : 60%;
+  height : 100px;
+  margin-left:4%;
+  display: inline-block;
+  vertical-align: top;
   z-index: 2;
 
   /*
@@ -31,8 +31,8 @@ nav
 
   ul
   {
-    position : absolute;
-    right : 2%;
+    display : inline-block;
+    margin-left: 20%;
     list-style: none;
 
     li
@@ -67,6 +67,51 @@ nav
 
 footer
 {
+  display : inline-block;
+  width : 100%;
+  height : 10%;
+  z-index : 1;
+
+  ul
+  {
+    margin-left : 10%;
+    margin-right: 10%;
+    bottom : 2%;
+    text-align: center;
+
+    li
+    {
+      display: inline-block;
+      margin : 5px;
+
+      a
+      {
+        font-family: $fontLien;
+        font-size : 10px;
+        text-shadow: 1px 1px #ffffff;
+      }
+
+      a:link
+      {
+        color : $mainColor;
+      }
+
+      a:visited
+      {
+        color : $mainColor;
+      }
+
+      a:hover
+      {
+        color : #3399FF;
+      }
+    }
+  }
+}
+
+#footerAccueil
+{
+  display : inline-block;
   position : absolute;
   bottom: 5%;
   width : 100%;
@@ -135,7 +180,9 @@ footer
 
 .centrePage
 {
-  display : inline-block;
+  display : block;
+  margin-top:150px;
+  z-index : 0;
   height : 2000px;
   width : 100%;
 }
@@ -211,20 +258,21 @@ footer
 }
 
 //Header
-//TO DO : Pb pour que ça s'affiche bien, revoir le positionnement des blocs
 header
 {
+  display : block;
     width : 100%;
-    height : 20%;
+    height : 150px;
+    right:0;
+    z-index : 1;
 }
 
 #placementLogoHeader
 {
-  position:absolute;
-  left : 20px ;
-  top : 20px; ;
+  display:inline-block;
+  vertical-align:top;
   z-index: 2;
-  width : 30%;
+  width : 35%;
   height : 100px;
 
   img
@@ -240,8 +288,6 @@ header
 {
   display : inline-block;
   text-align: left;
-  position : absolute;
-  top : 0;
   margin-top: 10px;
   margin-left : 30px;
   margin-bottom: 10px;
@@ -255,8 +301,6 @@ header
 #sousTitreHeader
 {
   display : inline-block;
-  position : absolute;
-  top : 30%;
   text-align : left;
   margin-top: 10px;
   margin-left: 30px;
