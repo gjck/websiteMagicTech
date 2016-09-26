@@ -19,7 +19,7 @@ nav
   margin-left:4%;
   display: inline-block;
   vertical-align: top;
-  z-index: 2;
+  z-index: 1;
 
   /*
   background: rgba(255,255,255,$opaciteDegrade);
@@ -159,7 +159,7 @@ footer
 
 .background
 {
-  z-index: 1;
+  z-index: 0;
   opacity : 0.6;
   position : fixed;
   top : 0;
@@ -170,7 +170,7 @@ footer
 
 .backgroundPages
 {
-  z-index: 1;
+  z-index: 0;
   opacity : 0.7;
   position : fixed;
   height : 150px;
@@ -271,6 +271,50 @@ header
     height : 150px;
     width : 100%;
     z-index : 1;
+
+    nav
+    {
+      width : 60%;
+      height : 100px;
+      margin-left:4%;
+      display: inline-block;
+      vertical-align: top;
+
+      ul
+      {
+        display : inline-block;
+        margin-left: 20%;
+        list-style: none;
+
+        li
+        {
+          display: inline-block;
+          margin : 5px;
+
+          a
+          {
+            font-family: $fontLien;
+            text-shadow: 2px 2px #ffffff;
+          }
+
+          a:link
+          {
+            color : $mainColor;
+          }
+
+          a:visited
+          {
+            color : $mainColor;
+          }
+
+          a:hover
+          {
+            color : #3399FF;
+          }
+
+        }
+      }
+    }
 }
 
 #placementLogoHeader

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2016-09-23 09:33:52
+/* Smarty version 3.1.30, created on 2016-09-26 10:25:54
   from "/Applications/MAMP/htdocs/MagicTech/html/index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_57e4dae0e9a077_24114172',
+  'unifunc' => 'content_57e8db92083764_31172534',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '873e8b43f9eabe152f3d9dc9f5e11dbfd4d33f59' => 
     array (
       0 => '/Applications/MAMP/htdocs/MagicTech/html/index.html',
-      1 => 1474616021,
+      1 => 1474878351,
       2 => 'file',
     ),
   ),
@@ -20,14 +20,15 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_57e4dae0e9a077_24114172 (Smarty_Internal_Template $_smarty_tpl) {
+function content_57e8db92083764_31172534 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
   <head>
     <title> Magic Tech </title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css" />
+    <link href="css/global.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/index.css" rel="stylesheet" type="text/css" media="all">
   </head>
 
   <body>
@@ -50,13 +51,13 @@ function content_57e4dae0e9a077_24114172 (Smarty_Internal_Template $_smarty_tpl)
   <?php echo '</script'; ?>
 >
 
-    <div class="background">
+    <div id="backgroundAccueil">
       <video autoplay id="video-fond">
         <source type="video/mp4" src="ressources/video-bg4.mp4" media="(orientation: landscape)">
       </video>
     </div>
 
-    <nav>
+    <nav id="navAccueil">
       <ul>
         <li><a href="php/connaitreMagicTech.php">Nous connaître</a></li>
         <li><a href="php/projetsMagicTech.php">Nos projets</a></li>
@@ -64,7 +65,6 @@ function content_57e4dae0e9a077_24114172 (Smarty_Internal_Template $_smarty_tpl)
         <li><a href="html/contact.html">Contact</a></li>
       <ul>
     </nav>
-
 
     <section id="milieuAccueil">
       <img src="ressources/logoMT.png" alt="logoMagicTech" id="logoMagicTech"/>
