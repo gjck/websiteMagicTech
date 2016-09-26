@@ -1,0 +1,15 @@
+@import "class/_middleBody.scss";
+@import "class/_backgroundBorne.scss";
+
+#gauche
+{
+  display: inline-block ;
+  width : 60%;
+  margin-right: 0;
+}
+
+#droite
+{
+  display: inline-block ;
+  width : 30%;
+}
