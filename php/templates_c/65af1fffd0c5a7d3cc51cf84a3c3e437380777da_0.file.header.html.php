@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2016-09-23 10:37:28
+/* Smarty version 3.1.30, created on 2016-09-26 10:40:33
   from "/Applications/MAMP/htdocs/MagicTech/html/header.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_57e4e9c87de3b3_56395303',
+  'unifunc' => 'content_57e8df01e5cd78_90668738',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '65af1fffd0c5a7d3cc51cf84a3c3e437380777da' => 
     array (
       0 => '/Applications/MAMP/htdocs/MagicTech/html/header.html',
-      1 => 1474619834,
+      1 => 1474879225,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:../html/nav.html' => 1,
   ),
 ),false)) {
-function content_57e4e9c87de3b3_56395303 (Smarty_Internal_Template $_smarty_tpl) {
+function content_57e8df01e5cd78_90668738 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <header>
 
@@ -34,14 +34,7 @@ function content_57e4e9c87de3b3_56395303 (Smarty_Internal_Template $_smarty_tpl)
   <?php $_smarty_tpl->_subTemplateRender("file:../html/nav.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
-
-<!--
-  <div class="backgroundPages">
-    <video autoplay id="video-fond">
-      <source type="video/mp4" src="../ressources/video-bg4.mp4" media="(orientation: landscape)">
-    </video>
-  </div>
--->  
+   
 </header>
 <?php }
 }
