@@ -67,9 +67,11 @@ nav
 
 footer
 {
-  display : inline-block;
+  position : fixed;
+  left: 0;
+  bottom : 10px;
   width : 100%;
-  height : 10%;
+  height : 100px;
   z-index : 1;
 
   ul
@@ -180,11 +182,14 @@ footer
 
 .centrePage
 {
-  display : block;
-  margin-top:150px;
-  z-index : 0;
-  height : 2000px;
+  position : fixed;
+  top:150px;
+  bottom : 100px;
+  right : 0;
+  left :0;
+  z-index : 1;
   width : 100%;
+  overflow-y:scroll;;
 }
 
 //Accueil
@@ -260,10 +265,11 @@ footer
 //Header
 header
 {
-  display : block;
-    width : 100%;
+    position : fixed;
+    top : 0;
+    right : 0;
     height : 150px;
-    right:0;
+    width : 100%;
     z-index : 1;
 }
 
