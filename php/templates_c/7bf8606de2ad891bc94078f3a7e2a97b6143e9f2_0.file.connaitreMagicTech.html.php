@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2016-09-26 10:39:35
+/* Smarty version 3.1.30, created on 2016-09-26 11:48:52
   from "/Applications/MAMP/htdocs/MagicTech/html/connaitreMagicTech.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_57e8dec7e3e5a6_34753830',
+  'unifunc' => 'content_57e8ef045e70a7_51946862',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7bf8606de2ad891bc94078f3a7e2a97b6143e9f2' => 
     array (
       0 => '/Applications/MAMP/htdocs/MagicTech/html/connaitreMagicTech.html',
-      1 => 1474879168,
+      1 => 1474883321,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:../html/footer.html' => 1,
   ),
 ),false)) {
-function content_57e8dec7e3e5a6_34753830 (Smarty_Internal_Template $_smarty_tpl) {
+function content_57e8ef045e70a7_51946862 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
