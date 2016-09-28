@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2016-09-28 15:30:35
+/* Smarty version 3.1.30, created on 2016-09-28 18:29:46
   from "/Applications/MAMP/htdocs/MagicTech/html/index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_57ebc5fb195349_03433353',
+  'unifunc' => 'content_57ebeffae32656_69230561',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '873e8b43f9eabe152f3d9dc9f5e11dbfd4d33f59' => 
     array (
       0 => '/Applications/MAMP/htdocs/MagicTech/html/index.html',
-      1 => 1475069428,
+      1 => 1475080184,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_57ebc5fb195349_03433353 (Smarty_Internal_Template $_smarty_tpl) {
+function content_57ebeffae32656_69230561 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
   <head>
     <title> Magic Tech </title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0 initial-scale=1.0" />
     <link href="css/global.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/index.css" rel="stylesheet" type="text/css" media="all">
   </head>
@@ -46,12 +47,16 @@ function content_57ebc5fb195349_03433353 (Smarty_Internal_Template $_smarty_tpl)
     </div>
 
     <nav id="navAccueil">
-      <ul id="menu">
-        <li><a href="php/connaitreMagicTech.php">Nous connaître</a></li>
-        <li><a href="php/projetsMagicTech.php">Nos projets</a></li>
-        <li><a href="php/devis.php">Devis</a></li>
-        <li><a href="php/contact.php">Contact</a></li>
-      <ul>
+      <ul class="navigation">
+        <li class="sousMenu"><span>Menu</span>
+          <ul class="menu">
+            <li><a href="php/connaitreMagicTech.php">Nous connaître</a></li>
+            <li><a href="php/projetsMagicTech.php">Nos projets</a></li>
+            <li><a href="php/devis.php">Devis</a></li>
+            <li><a href="php/contact.php">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
     </nav>
 
     <section id="milieuAccueil">
