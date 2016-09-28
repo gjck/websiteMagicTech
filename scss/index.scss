@@ -247,7 +247,7 @@
 #milieuAccueil
 {
   position:absolute;
-  top : 30%;
+  top : 20%;
   right : 5%;
   left : 5%;
   z-index: 2;
@@ -373,7 +373,7 @@
   top : 0;
   left: 0;
   right: 0;
-  height: 15%;
+  height: 13%;
   z-index:3;
   background-color: white;
 
@@ -381,20 +381,21 @@
   {
     display : inline-block;
     margin-top: 0;
+    margin-bottom: 0;
     padding: 0;
     width : 100%;
     list-style: none;
 
     li
     {
-      font-size: 30px;
-      padding: 25px;
+      font-size: 150%;
+      padding: 2%;
       width: auto;
       margin :0;
 
       img
       {
-        width : 60px;
+        width : 18%;
         height: auto;
         margin-left: 17%;
       }
@@ -438,7 +439,7 @@
   display: inline-block;
   vertical-align: top;
   margin-left: 30px;
-  margin-top: 10px;
+  margin-top: 5%;
 }
 
 @media only screen and (min-width:$largeurSmartphone)
