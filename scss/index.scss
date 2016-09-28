@@ -247,49 +247,47 @@
 #milieuAccueil
 {
   position:absolute;
-  top : 40%;
+  top : 30%;
   right : 5%;
   left : 5%;
   z-index: 2;
-  height : 300px;
+  height : auto;
 
   img
   {
-    float : left;
-    display : inline-block;
+    display : block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
     height : 100%;
-    width: auto;
+    width: 200px;
   }
 }
 
 #titreAccueil
 {
-  display : inline-block;
+  display : block;
   text-shadow: 4px -2px #ffffff;
-  position : absolute;
-  top : 0;
-  margin-top: 12%;
-  margin-left : 5%;
-  //margin-bottom: 10px;
-  z-index: 2;
-  width : 40%;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  margin-left : auto;
+  margin-right: auto;
   height : 40%;
-  font-size: 100px;
+  font-size: 50px;
   font-family: $fontTitre;
 }
 
 #sousTitreAccueil
 {
-  position : absolute;
-  top : 30%;
-  text-align : left;
+  display: block;
+  text-align : center;
   text-shadow: 2px -1px #ffffff;
-  margin-top: 30%;
-  margin-left: 5%;
-  margin-right: 5%;
-  z-index: 2;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
   height : 50px;
-  font-size : 30px;
+  font-size : 20px;
   font-family: $fontSousTitre;
   font-style: italic;
 }
@@ -307,29 +305,34 @@
 
 #footerAccueil
 {
-  position : absolute;
-  bottom: 5%;
+  position : fixed;
+  bottom: 0;
   right : 0;
   left : 0;
   height : auto;
-  z-index : 1;
+  z-index : 3;
+  background-color: white;
 
   ul
   {
-    margin-left : 2%;
-    margin-right: 2%;
-    bottom : 2%;
+    text-align: center;
+    margin-left : auto;
+    margin-right: auto;
+    padding: 0;
+    margin: 0;
 
     li
     {
-      margin : 10px;
+      margin : 5px;
       width : auto;
 
       a
       {
         font-family: $fontLien;
-        font-size : 18.5px;
+        font-size : 8px;
         text-shadow: 1px 1px #ffffff;
+        font-style: italic;
+        text-decoration: none;
       }
 
       a:link
@@ -346,8 +349,22 @@
       {
         color : #3399FF;
       }
+
+      ul
+      {
+        li
+        {
+          width : 100%;
+        }
+      }
     }
   }
+}
+
+#titreFooter
+{
+  font-size: 10px !important;
+  font-style: normal !important;
 }
 
 #navAccueil
@@ -357,11 +374,13 @@
   left: 0;
   right: 0;
   height: 15%;
-  z-index:1;
+  z-index:3;
+  background-color: white;
 
   ul
   {
     display : inline-block;
+    margin-top: 0;
     padding: 0;
     width : 100%;
     list-style: none;
@@ -370,8 +389,15 @@
     {
       font-size: 30px;
       padding: 25px;
-      width: 95%;
+      width: auto;
       margin :0;
+
+      img
+      {
+        width : 60px;
+        height: auto;
+        margin-left: 17%;
+      }
 
       a
       {
@@ -394,8 +420,25 @@
         color : #3399FF;
       }
 
+      ul
+      {
+        li
+        {
+          background-color: white;
+          width : auto;
+          font-size: 15px;
+        }
+      }
     }
   }
+}
+
+#titreMenu
+{
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 30px;
+  margin-top: 10px;
 }
 
 @media only screen and (min-width:$largeurSmartphone)

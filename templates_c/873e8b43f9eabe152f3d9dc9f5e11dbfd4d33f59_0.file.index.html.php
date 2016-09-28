@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2016-09-28 18:29:46
+/* Smarty version 3.1.30, created on 2016-09-28 19:21:00
   from "/Applications/MAMP/htdocs/MagicTech/html/index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_57ebeffae32656_69230561',
+  'unifunc' => 'content_57ebfbfc040657_61314830',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '873e8b43f9eabe152f3d9dc9f5e11dbfd4d33f59' => 
     array (
       0 => '/Applications/MAMP/htdocs/MagicTech/html/index.html',
-      1 => 1475080184,
+      1 => 1475083129,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_57ebeffae32656_69230561 (Smarty_Internal_Template $_smarty_tpl) {
+function content_57ebfbfc040657_61314830 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -66,15 +66,20 @@ function content_57ebeffae32656_69230561 (Smarty_Internal_Template $_smarty_tpl)
     </section>
 
     <footer id="footerAccueil">
-      <ul>
-        <li> <a href="html/mentionsLegales.html"> Mentions légales </a> </li>
-        <li> <a href="html/cgvMagicTech.html">Conditions générales de vente </a> </li>
-        <li> <a href="html/cguMagicTech.html">Conditions générales d'utilisation </a> </li>
-        <li> <a href="html/politiqueConfidentialitéMagicTech.html">Politique de confidentialité</a> </li>
-        <li> <a href="html/planDuSite.html"> Plan du site </a> </li>
-      </ul>
+    <ul class="navigationFooter">
+        <li class="sousMenuFooter"><span>Informations légales</span>
+          <ul class="menuFooter">
+            <li> <a href="html/mentionsLegales.html"> Mentions légales </a> </li>
+            <li> <a href="html/cgvMagicTech.html">Conditions générales de vente </a> </li>
+            <li> <a href="html/cguMagicTech.html">Conditions générales d'utilisation </a> </li>
+            <li> <a href="html/politiqueConfidentialitéMagicTech.html">Politique de confidentialité</a> </li>
+            <li> <a href="html/planDuSite.html"> Plan du site </a> </li>
+          </ul>
+        </li>
+    </ul>
     </footer>
 
+  <div class="hidden">Icons made by <a href="http://www.flaticon.com/authors/robin-kylander" title="Robin Kylander">Robin Kylander</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
   </body>
 </html>
 <?php }

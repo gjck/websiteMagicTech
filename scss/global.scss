@@ -33,7 +33,7 @@ header
         {
           display: inline-block;
           margin : 5px;
-
+          
           a
           {
             font-family: $fontLien;
@@ -151,4 +151,9 @@ footer
       }
     }
   }
+}
+
+.hidden
+{
+  display: none;
 }
