@@ -9,19 +9,7 @@
 
   <body>
   <script src="libraries/jquery.js"></script>
-  <script>
-    $(function()
-      {
-        $('#titreAccueil').hide(1);
-        $('#logoMagicTech').hide(1);
-        $('#sousTitreAccueil').hide(1);
-        $('#logoMagicTech').fadeIn(1500,function showTitre(){
-          $('#titreAccueil').fadeIn(1500,function showSousTitre(){
-            $('#sousTitreAccueil').fadeIn(1500);
-            });
-          });
-      });
-  </script>
+  <script type="text/javascript" src="js/index.js"></script>
 
     <div id="backgroundAccueil">
       <video autoplay id="video-fond">
@@ -30,7 +18,7 @@
     </div>
 
     <nav id="navAccueil">
-      <ul>
+      <ul id="menu">
         <li><a href="php/connaitreMagicTech.php">Nous connaître</a></li>
         <li><a href="php/projetsMagicTech.php">Nos projets</a></li>
         <li><a href="php/devis.php">Devis</a></li>
