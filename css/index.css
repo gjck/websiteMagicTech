@@ -296,7 +296,8 @@
   top: 0;
   bottom: 0;
   right: 0;
-  left: 0; }
+  left: 0;
+  display: hidden; }
 
 #footerAccueil {
   position: fixed;
@@ -348,29 +349,34 @@
     margin-bottom: 0;
     padding: 0;
     width: 100%;
+    height: 100%;
     list-style: none; }
     #navAccueil ul li {
       font-size: 150%;
       padding: 2%;
-      width: auto;
+      width: 100%;
+      height: 100%;
       margin: 0; }
       #navAccueil ul li img {
-        width: 18%;
+        width: 50px;
         height: auto;
         margin-left: 17%; }
       #navAccueil ul li a {
         font-family: "Neuropolitical";
         text-shadow: 2px 2px #ffffff; }
-      #navAccueil ul li a:link {
-        color: black; }
-      #navAccueil ul li a:visited {
-        color: black; }
-      #navAccueil ul li a:hover {
-        color: #3399FF; }
-      #navAccueil ul li ul li {
-        background-color: white;
-        width: auto;
-        font-size: 15px; }
+      #navAccueil ul li ul {
+        border-top: 1px rgba(0, 0, 0, 0.5) solid; }
+        #navAccueil ul li ul li {
+          border-bottom: 1px rgba(0, 0, 0, 0.5) solid;
+          background-color: white;
+          width: auto;
+          font-size: 15px; }
+          #navAccueil ul li ul li a:link {
+            color: black; }
+          #navAccueil ul li ul li a:visited {
+            color: black; }
+          #navAccueil ul li ul li a:hover {
+            color: #3399FF; }
 
 #titreMenu {
   display: inline-block;
@@ -379,20 +385,53 @@
   margin-top: 5%; }
 
 @media only screen and (min-width: 380px) {
-  #navAccueil ul li {
-    width: 45%;
-    height: 25px;
-    margin: 5px;
-    background-color: rgba(255, 255, 255, 0.7);
-    font-size: 370px;
-    border: 2px black solid;
-    border-radius: 4px;
-    padding: 10px; }
-  #navAccueil ul li:hover {
-    font-size: 20px; }
+  #navAccueil {
+    height: 10%; }
+    #navAccueil ul {
+      margin-top: 1.5%;
+      vertical-align: top; }
+      #navAccueil ul li {
+        padding: 0; }
+        #navAccueil ul li img {
+          float: left;
+          width: 40px;
+          margin-left: 65%;
+          margin-top: 2.5%; }
+        #navAccueil ul li ul {
+          margin-top: 0; }
+          #navAccueil ul li ul li {
+            padding: 10px; }
+            #navAccueil ul li ul li a {
+              font-size: 25px;
+              margin-left: 10%; }
 
-  #footerAccueil ul li {
-    width: 100%;
-    height: 20px; } }
+  #milieuAccueil img {
+    width: 300px; } }
+@media only screen and (min-width: 780px) {
+  #navAccueil {
+    height: 10%; }
+    #navAccueil ul {
+      margin-top: 0;
+      vertical-align: top; }
+      #navAccueil ul li {
+        padding: 0; }
+        #navAccueil ul li a {
+          width: 20%;
+          height: 100%;
+          line-height: 100%;
+          margin-left: 79%;
+          display: inline-block; }
+          #navAccueil ul li a img {
+            width: 40px;
+            margin-left: 2%;
+            margin-top: 20px;
+            margin-bottom: auto; }
+        #navAccueil ul li ul {
+          height: auto; }
+          #navAccueil ul li ul li a {
+            display: inline; }
+
+  #titreMenu {
+    margin-top: 28px; } }
 
 /*# sourceMappingURL=index.css.map */
