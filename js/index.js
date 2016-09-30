@@ -13,7 +13,7 @@ $(function()
     $(".navigation ul.menu").hide();
 
     $(".navigation li.sousMenu span").each( function () {
-        $(this).replaceWith('<a href="" title="Afficher le sous-menu"><div class="flex"><img src="ressources/img/iconMenu.svg" alt="Icone Menu"/><div id="titreMenu">' + $(this).text() + '</div></div><\/a>') ;
+        $(this).replaceWith('<div class="placementIconeMenu"><div class="flex"><img src="ressources/img/iconMenu.svg" alt="Icone Menu"/><span id="titreMenu">' + $(this).text() + '</span><span class="valign"></span><\/a></div>') ;
     } ) ;
 
     $(".navigation li.sousMenu > a").click( function () {
