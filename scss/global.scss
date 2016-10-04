@@ -5,6 +5,22 @@
 @import "class/_videoBackGround.scss";
 
 //header
+.alignementDroite
+{
+  position: absolute;
+  left: 50%;
+  right: 0;
+  height: 100%;
+}
+
+.alignementGauche
+{
+  position: absolute;
+  left: 0;
+  right: 50%;
+  height: 100%;
+}
+
 header
 {
     position : fixed;
@@ -16,49 +32,106 @@ header
 
     nav
     {
-      float : right;
-      width : 40%;
-      height : 100px;
-      margin-right:10px;
-      display: inline-block;
-      vertical-align: top;
+      width: 100%;
+      height: 100%;
 
-      ul
-      {
-        display : inline-block;
-        margin-left: 10%;
-        list-style: none;
-
-        li
+        ul
         {
-          display: inline-block;
-          margin : 5px;
+          margin-top: 0;
+          margin-bottom: 0;
+          padding: 0;
+          width : 100%;
+          height: 100%;
+          list-style: none;
 
-          a
+          li
           {
-            font-family: $fontLien;
-            text-shadow: 2px 2px #ffffff;
-          }
+            width: 100%;
+            height : 100%;
+            padding: 0;
 
-          a:link
-          {
-            color : $mainColor;
-          }
+            a
+            {
+              font-family: $fontLien;
+              text-shadow: 2px 2px #ffffff;
+              font-size: 15px;
+            }
 
-          a:visited
-          {
-            color : $mainColor;
-          }
+            ul
+            {
+              border-top: 1px rgba(0,0,0,0.5) solid;
+              height : auto;
 
-          a:hover
-          {
-            color : #3399FF;
-          }
+              li
+              {
+                border-bottom: 1px rgba(0,0,0,0.5) solid;
+                background-color: white;
+                width : auto;
+                font-size: 15px;
+                padding : 5px;
 
+                a
+                {
+                  display: inline;
+                }
+
+                a:link
+                {
+                  color : $mainColor;
+                }
+
+                a:visited
+                {
+                  color : $mainColor;
+                }
+
+                a:hover
+                {
+                  color : #3399FF;
+                }
+              }
+            }
+          }
         }
       }
-    }
+
+      .placementIconeMenu
+      {
+          width: 100%;
+          height: 100%;
+
+          span,img
+          {
+            vertical-align: middle;
+          }
+      }
+
+      .valign
+      {
+        height: 100%;
+        display: inline-block;
+        *display: inline; zoom: 1;
+      }
+
+      #titreMenu
+      {
+        margin-left: 10px;
+      }
+
+      .flex
+      {
+        height : 100%;
+        text-align: center;
+
+        img
+        {
+          max-height: 35px;
+          height: 100%;
+          width: auto;
+        }
+      }
 }
+
 
 #placementLogoHeader
 {
@@ -110,44 +183,62 @@ header
 footer
 {
   position : fixed;
-  left: 0;
-  bottom : 10px;
-  width : 100%;
-  height : 50px;
-  z-index : 1;
+  bottom: 0;
+  right : 0;
+  left : 0;
+  height : auto;
+  z-index : 3;
+  background-color: white;
 
   ul
   {
-    margin-left : 10%;
-    margin-right: 10%;
-    bottom : 2%;
     text-align: center;
+    margin-left : auto;
+    margin-right: auto;
+    padding: 0;
+    margin: 0;
 
     li
     {
-      display: inline-block;
-      margin : 5px;
+      margin : 10px;
+      width : auto;
 
       a
       {
-        font-family: $fontLien;
-        font-size : 10px;
-        text-shadow: 1px 1px #ffffff;
+        font-size: 10px;
+        font-family: $fontSousTitre;
       }
 
-      a:link
+      ul
       {
-        color : $mainColor;
-      }
+        li
+        {
+          width : 100%;
 
-      a:visited
-      {
-        color : $mainColor;
-      }
+          a
+          {
+            font-family: $fontLien;
+            font-size : 8px;
+            text-shadow: 1px 1px #ffffff;
+            font-style: italic;
+            text-decoration: none;
+          }
 
-      a:hover
-      {
-        color : #3399FF;
+          a:link
+          {
+            color : $mainColor;
+          }
+
+          a:visited
+          {
+            color : $mainColor;
+          }
+
+          a:hover
+          {
+            color : #3399FF;
+          }
+        }
       }
     }
   }
