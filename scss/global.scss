@@ -55,6 +55,12 @@ header
               font-family: $fontLien;
               text-shadow: 2px 2px #ffffff;
               font-size: 15px;
+              text-decoration: none;
+            }
+
+            a:visited
+            {
+              color: $mainColor;
             }
 
             ul
@@ -121,7 +127,8 @@ header
       .flex
       {
         height : 100%;
-        text-align: center;
+        text-align:right;
+        padding-right: 10%;
 
         img
         {
@@ -195,6 +202,7 @@ footer
       {
         font-size: 10px;
         font-family: $fontSousTitre;
+        text-decoration: none;
       }
 
       ul
@@ -256,6 +264,13 @@ footer
     {
       color : $mainColor;
     }
+
+    a:link
+    {
+      color: $mainColor;
+      font-style: none;
+      text-decoration: none;
+    }
   }
 
   #titreHeader
@@ -265,7 +280,5 @@ footer
     font-size: 25px;
     font-family: $fontTitre;
     vertical-align: middle;
-    font-style: none;
-    text-decoration: none;
   }
 }

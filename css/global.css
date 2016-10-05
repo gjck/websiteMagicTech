@@ -95,7 +95,10 @@ header {
         header nav ul li a {
           font-family: "Neuropolitical";
           text-shadow: 2px 2px #ffffff;
-          font-size: 15px; }
+          font-size: 15px;
+          text-decoration: none; }
+        header nav ul li a:visited {
+          color: black; }
         header nav ul li ul {
           border-top: 1px rgba(0, 0, 0, 0.5) solid;
           height: auto; }
@@ -127,7 +130,8 @@ header {
     margin-left: 10px; }
   header .flex {
     height: 100%;
-    text-align: center; }
+    text-align: right;
+    padding-right: 10%; }
     header .flex img {
       max-height: 35px;
       height: 100%;
@@ -170,7 +174,8 @@ footer {
       width: auto; }
       footer ul li a {
         font-size: 10px;
-        font-family: "Neuropolitical"; }
+        font-family: "Neuropolitical";
+        text-decoration: none; }
       footer ul li ul li {
         width: 100%; }
         footer ul li ul li a {
@@ -195,14 +200,16 @@ footer {
 @media only screen and (min-width: 750px) {
   #placementLogoHeader a:visited {
     color: black; }
+  #placementLogoHeader a:link {
+    color: black;
+    font-style: none;
+    text-decoration: none; }
 
   #titreHeader {
     display: inline;
     margin-left: 30px;
     font-size: 25px;
     font-family: "Aero";
-    vertical-align: middle;
-    font-style: none;
-    text-decoration: none; } }
+    vertical-align: middle; } }
 
 /*# sourceMappingURL=global.css.map */

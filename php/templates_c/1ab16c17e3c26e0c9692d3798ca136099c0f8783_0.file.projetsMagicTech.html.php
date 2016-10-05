@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2016-09-26 17:56:21
+/* Smarty version 3.1.30, created on 2016-10-05 10:07:48
   from "/Applications/MAMP/htdocs/MagicTech/html/projetsMagicTech.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_57e94525092b85_06385823',
+  'unifunc' => 'content_57f4b4d4a59512_07457378',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1ab16c17e3c26e0c9692d3798ca136099c0f8783' => 
     array (
       0 => '/Applications/MAMP/htdocs/MagicTech/html/projetsMagicTech.html',
-      1 => 1474905376,
+      1 => 1475595534,
       2 => 'file',
     ),
   ),
@@ -22,13 +22,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:../html/footer.html' => 1,
   ),
 ),false)) {
-function content_57e94525092b85_06385823 (Smarty_Internal_Template $_smarty_tpl) {
+function content_57f4b4d4a59512_07457378 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
   <head>
     <title> Magic Tech : Nos projets </title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0 initial-scale=1.0" />
     <link href="../css/global.css" rel="stylesheet" type="text/css" media="all">
     <link href="../css/projetsMagicTech.css" rel="stylesheet" type="text/css" media="all">
   </head>
@@ -108,7 +109,7 @@ function content_57e94525092b85_06385823 (Smarty_Internal_Template $_smarty_tpl)
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
               consequat. Duis aute irure dolor in Ben Beau Goss reprehenderit in voluptate velit esse
               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-              non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>            
+              non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
         </article>
       </section>
     </div>
