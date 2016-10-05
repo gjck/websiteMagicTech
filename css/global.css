@@ -132,6 +132,13 @@ header {
       max-height: 35px;
       height: 100%;
       width: auto; }
+  header .flexGauche {
+    height: 100%;
+    text-align: center; }
+    header .flexGauche img {
+      max-height: 35px;
+      height: 100%;
+      width: auto; }
 
 #placementLogoHeader {
   width: 100%;
@@ -142,33 +149,7 @@ header {
     max-height: 100px; }
 
 #titreHeader {
-  display: none;
-  /*
-  display : inline-block;
-  text-align: left;
-  margin-top: 10px;
-  margin-left : 30px;
-  margin-bottom: 0px;
-  width : 150px;
-  height : 30px;
-  font-size: 25px;
-  font-family: $fontTitre;
-  */ }
-
-#sousTitreHeader {
-  display: none;
-  /*
-  display : inline-block;
-  text-align : left;
-  margin-left: 30px;
-  margin-top: 5px;
-  margin-bottom : 0px;
-  width : 55%;
-  height : 50px;
-  font-size : 15px;
-  font-family: $mainFont;
-  font-style: italic;
-  */ }
+  display: none; }
 
 footer {
   position: fixed;
@@ -207,5 +188,21 @@ footer {
 
 .hidden {
   display: none; }
+
+@media only screen and (max-height: 380px) {
+  #placementLogoHeader img {
+    max-height: 50px; } }
+@media only screen and (min-width: 750px) {
+  #placementLogoHeader a:visited {
+    color: black; }
+
+  #titreHeader {
+    display: inline;
+    margin-left: 30px;
+    font-size: 25px;
+    font-family: "Aero";
+    vertical-align: middle;
+    font-style: none;
+    text-decoration: none; } }
 
 /*# sourceMappingURL=global.css.map */

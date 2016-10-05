@@ -130,6 +130,19 @@ header
           width: auto;
         }
       }
+
+      .flexGauche
+      {
+        height: 100%;
+        text-align: center;
+
+        img
+        {
+          max-height: 35px;
+          height: 100%;
+          width: auto;
+        }
+      }
 }
 
 
@@ -152,34 +165,6 @@ header
 #titreHeader
 {
   display: none;
-  /*
-  display : inline-block;
-  text-align: left;
-  margin-top: 10px;
-  margin-left : 30px;
-  margin-bottom: 0px;
-  width : 150px;
-  height : 30px;
-  font-size: 25px;
-  font-family: $fontTitre;
-  */
-}
-
-#sousTitreHeader
-{
-  display: none;
-  /*
-  display : inline-block;
-  text-align : left;
-  margin-left: 30px;
-  margin-top: 5px;
-  margin-bottom : 0px;
-  width : 55%;
-  height : 50px;
-  font-size : 15px;
-  font-family: $mainFont;
-  font-style: italic;
-  */
 }
 
 //footer
@@ -250,4 +235,37 @@ footer
 .hidden
 {
   display: none;
+}
+
+@media only screen and (max-height:$hauteurSmartphoneCouche)
+{
+  #placementLogoHeader
+  {
+    img
+    {
+      max-height: 50px;
+    }
+  }
+}
+
+@media only screen and (min-width:$largeurTabletteMini)
+{
+  #placementLogoHeader
+  {
+    a:visited
+    {
+      color : $mainColor;
+    }
+  }
+
+  #titreHeader
+  {
+    display : inline;
+    margin-left : 30px;
+    font-size: 25px;
+    font-family: $fontTitre;
+    vertical-align: middle;
+    font-style: none;
+    text-decoration: none;
+  }
 }
