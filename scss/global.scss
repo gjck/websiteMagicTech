@@ -405,6 +405,18 @@ footer
     width: auto;
   }
 
+  #titreAccueil
+  {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  #sousTitreAccueil
+  {
+    margin-top: 5px;
+  }
+
+
   #placementLogoHeader
   {
     a:visited
@@ -427,5 +439,13 @@ footer
     font-size: 25px;
     font-family: $fontTitre;
     vertical-align: middle;
+  }
+
+  #milieuAccueil
+  {
+    p,img
+    {
+      display: block;
+    }
   }
 }

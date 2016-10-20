@@ -263,6 +263,13 @@ footer {
     top: auto;
     width: auto; }
 
+  #titreAccueil {
+    margin-top: 30px;
+    margin-bottom: 10px; }
+
+  #sousTitreAccueil {
+    margin-top: 5px; }
+
   #placementLogoHeader a:visited {
     color: black; }
   #placementLogoHeader a:link {
@@ -275,6 +282,9 @@ footer {
     margin-left: 30px;
     font-size: 25px;
     font-family: "Aero";
-    vertical-align: middle; } }
+    vertical-align: middle; }
+
+  #milieuAccueil p, #milieuAccueil img {
+    display: block; } }
 
 /*# sourceMappingURL=global.css.map */
