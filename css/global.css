@@ -10,6 +10,11 @@
 body {
   margin: 0; }
 
+section {
+  display: block;
+  width: 100%;
+  height: 520px; }
+
 .alignementDroite {
   position: absolute;
   bottom: 0;
@@ -41,10 +46,6 @@ body {
     display: inline;
     font-family: "Neuropolitical";
     font-size: 12px; }
-
-section {
-  display: block;
-  height: 480px; }
 
 header .placementIconeMenu {
   width: 100%;
@@ -92,43 +93,150 @@ header .flexGauche {
   background-image: url(../ressources/img/3300.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 30%; }
+  background-position: 42%; }
+
+.ancres {
+  height: 0px;
+  position: relative;
+  top: -9.5em;
+  visibility: hidden; }
+
+.titreSection {
+  border: 2px black solid;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+  font-size: 10px;
+  font-family: "Neuropolitical";
+  font-style: italic; }
+
+#milieuAccueil img {
+  padding-top: 40px;
+  display: block;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
+  width: 200px; }
+
+#titreAccueil {
+  display: block;
+  text-shadow: 4px -2px #ffffff;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40%;
+  font-size: 50px;
+  font-family: "Aero"; }
+
+#sousTitreAccueil {
+  display: block;
+  text-align: center;
+  text-shadow: 2px -1px #ffffff;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  font-size: 20px;
+  font-family: "Neuropolitical";
+  font-style: italic; }
+
+#carte {
+  width: 100%; }
+  #carte iframe {
+    margin-top: 5px;
+    width: 100%;
+    height: 250px; }
+
+#adresse {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px; }
+  #adresse p, #adresse h3, #adresse a {
+    margin-left: 10px; }
+  #adresse h3 {
+    font-family: "Aero"; }
+  #adresse p {
+    font-family: "Neuropolitical";
+    font-size: 10px; }
+  #adresse a {
+    font-family: "Neuropolitical";
+    font-size: 10px; }
+
+.middleBody {
+  position: fixed;
+  top: 150px;
+  bottom: 50px;
+  width: 100%;
+  overflow: scroll;
+  z-index: 1; }
+
+.backgroundBorne {
+  z-index: 0;
+  opacity: 0.7;
+  position: fixed;
+  height: 17%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  overflow: hidden; }
+
+#formulaireDevis {
+  display: block;
+  width: 100%; }
+  #formulaireDevis form {
+    margin-top: 10px;
+    font-family: "Neuropolitical";
+    font-size: 12px; }
+    #formulaireDevis form input, #formulaireDevis form textarea, #formulaireDevis form select, #formulaireDevis form p {
+      display: block;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0px; }
+    #formulaireDevis form textarea {
+      height: 100px; }
+
+#submit {
+  margin-top: 20px;
+  background-color: #2980b9;
+  border-radius: 2px;
+  border: 1px black solid;
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 12px;
+  font-family: "Neuropolitical";
+  height: 30px; }
+
+#submit:hover {
+  opacity: 0.5;
+  font-size: 14px; }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  height: auto;
-  z-index: 3;
+  display: block;
+  width: 100%;
   background-color: white; }
   footer ul {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-    margin: 0; }
+    padding: 0; }
     footer ul li {
-      margin: 10px;
-      width: auto; }
+      display: inline;
+      padding-left: 5px; }
       footer ul li a {
-        font-size: 10px;
         font-family: "Neuropolitical";
+        font-size: 8px;
+        text-shadow: 1px 1px #ffffff;
+        font-style: italic;
         text-decoration: none; }
-      footer ul li ul li {
-        width: 100%; }
-        footer ul li ul li a {
-          font-family: "Neuropolitical";
-          font-size: 8px;
-          text-shadow: 1px 1px #ffffff;
-          font-style: italic;
-          text-decoration: none; }
-        footer ul li ul li a:link {
-          color: black; }
-        footer ul li ul li a:visited {
-          color: black; }
-        footer ul li ul li a:hover {
-          color: #3399FF; }
+      footer ul li a:link {
+        color: black; }
+      footer ul li a:visited {
+        color: black; }
+      footer ul li a:hover {
+        color: #3399FF; }
 
 .hidden {
   display: none; }

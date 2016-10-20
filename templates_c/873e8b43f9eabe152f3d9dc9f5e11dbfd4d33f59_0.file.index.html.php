@@ -1,27 +1,28 @@
 <?php
-/* Smarty version 3.1.30, created on 2016-10-20 12:54:28
+/* Smarty version 3.1.30, created on 2016-10-20 16:34:48
   from "/Applications/MAMP/htdocs/MagicTech/html/index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5808a26447ce51_49924158',
+  'unifunc' => 'content_5808d608582804_91375733',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '873e8b43f9eabe152f3d9dc9f5e11dbfd4d33f59' => 
     array (
       0 => '/Applications/MAMP/htdocs/MagicTech/html/index.html',
-      1 => 1476960703,
+      1 => 1476974086,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
     'file:html/header.html' => 1,
+    'file:../html/footer.html' => 1,
   ),
 ),false)) {
-function content_5808a26447ce51_49924158 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5808d608582804_91375733 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -50,46 +51,59 @@ function content_5808a26447ce51_49924158 (Smarty_Internal_Template $_smarty_tpl)
 
     <div id="containerSection">
       <section>
+        <div id="debut" class="ancres"></div>
         <div class="imgBackground">
           <div id="milieuAccueil">
             <img src="ressources/logoMT.png" alt="logoMagicTech" id="logoMagicTech"/>
-            <h1 id="titreAccueil"> MagicTech </h1>
-            <h2 id="sousTitreAccueil"> Nous faisons de vos envies une réalité </h2>
+            <p id="titreAccueil"> MagicTech </p>
+            <p id="sousTitreAccueil"> De l'innovation à la magie</p>
           </div>
         </div>
       </section>
 
       <section>
-        <p>Excitavit hic ardor milites per municipia plurima, quae isdem conterminant, dispositos et castella, sed quisque serpentes latius pro viribus repellere moliens, nunc globis confertos, aliquotiens et dispersos multitudine superabatur ingenti, quae nata et educata inter editos recurvosque ambitus montium eos ut loca plana persultat et mollia, missilibus obvios eminus lacessens et ululatu truci perterrens.</p>
+        <div id="contact" class="ancres"></div>
+        <div class="titreSection"><h2> Contactez-nous </h2></div>
+        <div id="formulaireDevis">
+            <form action="demandeDevis.php" method="post">
+              <p> Civilité : </p>
+              <select name="genre">
+                  <option value="M.">M.</option>
+                  <option value="Mme." selected>Mme.</option>
+                  <option value="Mlle.">Mlle.</option>
+              </select><br>
+              <p> NOM : </p>
+              <input type="text" name="NOM" placeholder="Nom"><br>
+              <p> Prénom : </p>
+              <input type="text" name="Prénom" placeholder="Prénom"><br>
+              <p> Sujet : </p>
+              <input type="text" name="Sujet" placeholder="Descriptif en trois mots"><br>
+              <p> Détails sur la demande : </p>
+              <textarea name="descriptif" id="descriptif">Descriptif plus complet de votre demande</textarea><br>
+              <input type="submit" value="Envoyer ma demande" id="submit">
+            </form>
+        </div>
       </section>
 
       <section>
-        <p>Excitavit hic ardor milites per municipia plurima, quae isdem conterminant, dispositos et castella, sed quisque serpentes latius pro viribus repellere moliens, nunc globis confertos, aliquotiens et dispersos multitudine superabatur ingenti, quae nata et educata inter editos recurvosque ambitus montium eos ut loca plana persultat et mollia, missilibus obvios eminus lacessens et ululatu truci perterrens.</p>
+        <div id="localisation" class="ancres"></div>
+        <div class="titreSection"><h2> Informations pratiques</h2></div>
+        <div id="carte">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.1946690607133!2d4.835523215732256!3d45.76728877910576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eaf90cc26bfb%3A0x8ceea9600698de03!2s4+Quai+Jean+Moulin%2C+69001+Lyon!5e0!3m2!1sfr!2sfr!4v1474901883698" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div id="adresse">
+          <h3> Magic Tech </h3>
+          <p> 4 Quai Jean Moulin <br> 69001 LYON </p>
+          <a href="mailto:contact@magictechfrance.com"> contact@magictechfrance.com </a>
+        </div>
       </section>
 
-      <section>
-        <p>Excitavit hic ardor milites per municipia plurima, quae isdem conterminant, dispositos et castella, sed quisque serpentes latius pro viribus repellere moliens, nunc globis confertos, aliquotiens et dispersos multitudine superabatur ingenti, quae nata et educata inter editos recurvosque ambitus montium eos ut loca plana persultat et mollia, missilibus obvios eminus lacessens et ululatu truci perterrens.</p>
-      </section>
+      <?php $_smarty_tpl->_subTemplateRender("file:../html/footer.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
 
-      <section>
-        <footer id="footerAccueil">
-        <ul class="navigationFooter">
-            <li class="sousMenuFooter"><span>Informations légales</span>
-              <ul class="menuFooter">
-                <li> <a href="html/mentionsLegales.html"> Mentions légales </a> </li>
-                <li> <a href="html/cgvMagicTech.html">Conditions générales de vente </a> </li>
-                <li> <a href="html/cguMagicTech.html">Conditions générales d'utilisation </a> </li>
-                <li> <a href="html/politiqueConfidentialitéMagicTech.html">Politique de confidentialité</a> </li>
-                <li> <a href="html/planDuSite.html"> Plan du site </a> </li>
-              </ul>
-            </li>
-        </ul>
-        </footer>
-      </section>
     </div>
   </div>
 
-  <div class="hidden">Icons made by <a href="http://www.flaticon.com/authors/robin-kylander" title="Robin Kylander">Robin Kylander</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
   </body>
 </html>
 <?php }

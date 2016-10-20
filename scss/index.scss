@@ -1,46 +1,5 @@
 @import "class/_variables.scss";
 
-#milieuAccueil
-{
-  img
-  {
-    display : block;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    height : 100%;
-    width: 200px;
-  }
-}
-
-#titreAccueil
-{
-  display : block;
-  text-shadow: 4px -2px #ffffff;
-  text-align: center;
-  margin-top: 10%;
-  margin-bottom: 5%;
-  margin-left : auto;
-  margin-right: auto;
-  height : 40%;
-  font-size: 50px;
-  font-family: $fontTitre;
-}
-
-#sousTitreAccueil
-{
-  display: block;
-  text-align : center;
-  text-shadow: 2px -1px #ffffff;
-  margin-top: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  height : 50px;
-  font-size : 20px;
-  font-family: $fontSousTitre;
-  font-style: italic;
-}
-
 #backgroundAccueil
 {
   z-index: 0;
@@ -51,61 +10,6 @@
   right: 0;
   left: 0;
   display: hidden;
-}
-
-#footerAccueil
-{
-  display : block;
-  width : 100%;
-  height : auto;
-  background-color: white;
-
-  ul
-  {
-    text-align: center;
-    margin-left : auto;
-    margin-right: auto;
-    padding: 0;
-    margin: 0;
-
-    li
-    {
-      margin : 5px;
-      width : auto;
-
-      a
-      {
-        font-family: $fontLien;
-        font-size : 8px;
-        text-shadow: 1px 1px #ffffff;
-        font-style: italic;
-        text-decoration: none;
-      }
-
-      a:link
-      {
-        color : $mainColor;
-      }
-
-      a:visited
-      {
-        color : $mainColor;
-      }
-
-      a:hover
-      {
-        color : #3399FF;
-      }
-
-      ul
-      {
-        li
-        {
-          width : 100%;
-        }
-      }
-    }
-  }
 }
 
 #titreFooter

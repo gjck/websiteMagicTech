@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2016-09-26 17:46:51
+/* Smarty version 3.1.30, created on 2016-10-20 15:29:43
   from "/Applications/MAMP/htdocs/MagicTech/html/devis.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_57e942ebb10850_78752444',
+  'unifunc' => 'content_5808c6c7dd5398_58244903',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5c77748c553f0b73b0904797ce90873cb0320322' => 
     array (
       0 => '/Applications/MAMP/htdocs/MagicTech/html/devis.html',
-      1 => 1474904785,
+      1 => 1475595524,
       2 => 'file',
     ),
   ),
@@ -22,13 +22,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:../html/footer.html' => 1,
   ),
 ),false)) {
-function content_57e942ebb10850_78752444 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5808c6c7dd5398_58244903 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
   <head>
     <title> Magic Tech : Demandez un devis</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0 initial-scale=1.0" />
     <link href="../css/global.css" rel="stylesheet" type="text/css" media="all">
     <link href="../css/devis.css" rel="stylesheet" type="text/css" media="all">
   </head>

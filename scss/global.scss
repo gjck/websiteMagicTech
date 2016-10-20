@@ -9,6 +9,13 @@ body
   margin :0;
 }
 
+section
+{
+  display: block;
+  width : 100%;
+  height: 520px;
+}
+
 //header
 .alignementDroite
 {
@@ -65,12 +72,6 @@ body
     font-family: $fontLien;
     font-size: 12px;
   }
-}
-
-section
-{
-  display: block;
-  height: 480px;
 }
 
 header
@@ -161,45 +162,181 @@ header
   background-image: url(../ressources/img/3300.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 30%;
+  background-position: 42%;
+}
+
+.ancres
+{
+  height: 0px;
+  position: relative;
+  top: -9.5em;
+  visibility: hidden;
+}
+
+.titreSection
+{
+  border : 2px black solid;
+  border-radius: 5px;
+
+  margin: 5px;
+  text-align: center;
+
+  font-size: 10px;
+  font-family: $fontSousTitre;
+  font-style: italic;
+}
+
+#milieuAccueil
+{
+  img
+  {
+    padding-top: 40px;
+    display : block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    height : 100%;
+    width: 200px;
+  }
+}
+
+#titreAccueil
+{
+  display : block;
+  text-shadow: 4px -2px #ffffff;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  margin-left : auto;
+  margin-right: auto;
+  height : 40%;
+  font-size: 50px;
+  font-family: $fontTitre;
+}
+
+#sousTitreAccueil
+{
+  display: block;
+  text-align : center;
+  text-shadow: 2px -1px #ffffff;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  height : 50px;
+  font-size : 20px;
+  font-family: $fontSousTitre;
+  font-style: italic;
+}
+
+//infos pratique
+#carte
+{
+  width: 100%;
+
+  iframe
+  {
+    margin-top: 5px;
+    width:100%;
+    height:250px;
+  }
+}
+
+#adresse
+{
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+
+  p,h3,a
+  {
+    margin-left: 10px;
+  }
+
+  h3
+  {
+    font-family: $fontTitre
+  }
+
+  p
+  {
+    font-family: $fontSousTitre;
+    font-size: 10px;
+  }
+
+  a
+  {
+    font-family: $fontSousTitre;
+    font-size: 10px;
+  }
+}
+
+//devis
+@import "class/_middleBody.scss";
+@import "class/_backgroundBorne.scss";
+
+#formulaireDevis
+{
+  display: block;
+  width :  100%;
+
+  form
+  {
+    margin-top: 10px;
+    font-family: $fontLien;
+    font-size: 12px;
+
+    input,textarea,select,p
+    {
+      display: block;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0px;
+    }
+
+    textarea
+    {
+      height : 100px;
+    }
+  }
+}
+
+#submit
+{
+  margin-top: 20px;
+  background-color: #2980b9;
+  border-radius: 2px;
+  border: 1px black solid;
+  color: white;
+  font-weight:bold;
+  font-style: italic;
+  font-size: 12px;
+  font-family: $fontLien;
+  height : 30px;
+}
+
+#submit:hover
+{
+  opacity: 0.5;
+  font-size: 14px;
 }
 
 //footer
 footer
 {
-  position : fixed;
-  bottom: 0;
-  right : 0;
-  left : 0;
-  height : auto;
-  z-index : 3;
+  display: block;
+  width: 100%;
   background-color: white;
-
-  ul
-  {
-    text-align: center;
-    margin-left : auto;
-    margin-right: auto;
-    padding: 0;
-    margin: 0;
-
-    li
-    {
-      margin : 10px;
-      width : auto;
-
-      a
-      {
-        font-size: 10px;
-        font-family: $fontSousTitre;
-        text-decoration: none;
-      }
 
       ul
       {
+        text-align: center;
+        padding: 0;
+
         li
         {
-          width : 100%;
+          display: inline;
+          padding-left:5px;
 
           a
           {
@@ -226,8 +363,6 @@ footer
           }
         }
       }
-    }
-  }
 }
 
 .hidden

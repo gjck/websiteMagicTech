@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2016-10-20 12:14:46
+/* Smarty version 3.1.30, created on 2016-10-20 15:29:43
   from "/Applications/MAMP/htdocs/MagicTech/html/header.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_580899168d3724_25316986',
+  'unifunc' => 'content_5808c6c7de6430_89144734',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '65af1fffd0c5a7d3cc51cf84a3c3e437380777da' => 
     array (
       0 => '/Applications/MAMP/htdocs/MagicTech/html/header.html',
-      1 => 1476957231,
+      1 => 1476969246,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_580899168d3724_25316986 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5808c6c7de6430_89144734 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <header>
   <?php echo '<script'; ?>
@@ -39,7 +39,7 @@ function content_580899168d3724_25316986 (Smarty_Internal_Template $_smarty_tpl)
       <li><a href="php/connaitreMagicTech.php">Nous connaître</a></li>
       <li><a href="php/projetsMagicTech.php">Nos projets</a></li>
       <li><a href="php/devis.php">Devis</a></li>
-      <li><a href="php/contact.php">Contact</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
 </header>
