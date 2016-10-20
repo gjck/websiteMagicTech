@@ -1,27 +1,26 @@
 <?php
-/* Smarty version 3.1.30, created on 2016-10-05 09:50:24
+/* Smarty version 3.1.30, created on 2016-10-20 12:14:46
   from "/Applications/MAMP/htdocs/MagicTech/html/header.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_57f4b0c01bca13_32551832',
+  'unifunc' => 'content_580899168d3724_25316986',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '65af1fffd0c5a7d3cc51cf84a3c3e437380777da' => 
     array (
       0 => '/Applications/MAMP/htdocs/MagicTech/html/header.html',
-      1 => 1475653818,
+      1 => 1476957231,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
-    'file:../html/nav.html' => 1,
   ),
 ),false)) {
-function content_57f4b0c01bca13_32551832 (Smarty_Internal_Template $_smarty_tpl) {
+function content_580899168d3724_25316986 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <header>
   <?php echo '<script'; ?>
@@ -29,15 +28,19 @@ function content_57f4b0c01bca13_32551832 (Smarty_Internal_Template $_smarty_tpl)
 >
 
   <div class="alignementGauche">
-    <section id="placementLogoHeader">
-      <a href="../index.php"><div class="flexGauche"><img src="../ressources/logoMT.png" alt="logoMagicTech" id="logoMagicTechHeader"/><h1 id="titreHeader"> MagicTech </h1><span class="valign"></span></div></a>
-    </section>
+    <!--<div id="placementLogoHeader">-->
+      <a href="../index.php"><div class="flexGauche"><img src="ressources/logoMT.png" alt="logoMagicTech" id="logoMagicTechHeader"/><h1 id="titreHeader"> MagicTech </h1><span class="valign"></span></div></a>
+      <!--<div class="flexGauche"><h1 id="titreHeader">MagicTech</h1><span class="valign"></span></div>-->
+    <!--</div>-->
   </div>
 
   <div class="alignementDroite">
-    <?php $_smarty_tpl->_subTemplateRender("file:../html/nav.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-?>
-
+    <ul class="menuNavigation">
+      <li><a href="php/connaitreMagicTech.php">Nous connaître</a></li>
+      <li><a href="php/projetsMagicTech.php">Nos projets</a></li>
+      <li><a href="php/devis.php">Devis</a></li>
+      <li><a href="php/contact.php">Contact</a></li>
+    </ul>
   </div>
 </header>
 <?php }

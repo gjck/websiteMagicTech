@@ -2,13 +2,6 @@
 
 #milieuAccueil
 {
-  position:absolute;
-  top : 20%;
-  right : 5%;
-  left : 5%;
-  z-index: 2;
-  height : auto;
-
   img
   {
     display : block;
@@ -127,7 +120,10 @@
   left : 0;
   top : 0;
   width : 100%;
-  height : 8em;
+  height : 9em;
+
+  background-color: white;
+  border-bottom: 5px black solid;
 }
 
 #navAccueil

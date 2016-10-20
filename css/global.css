@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "AldotheApache";
   src: url("../ressources/fonts/AldotheApache.ttf"); }
@@ -8,57 +7,9 @@
 @font-face {
   font-family: "Neuropolitical";
   src: url("../ressources/fonts/neuropolitical.ttf"); }
-#video-fond {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -1;
-  background-size: cover; }
+body {
+  margin: 0; }
 
-/*
-#video-fond {
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-#video-fond > video {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-// 1. Pas de support d'object-fit
-@media (min-aspect-ratio: 16/9) {
-  #video-fond > video {
-    height: 300%;
-    top: -100%;
-  }
-}
-@media (max-aspect-ratio: 16/9) {
-  #video-fond > video {
-    width: 300%;
-    left: -100%;
-  }
-}
-// 2. En cas de support d'object-fit, écrase les règles en (1)
-@supports (object-fit: cover) {
-  #video-fond > video {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-  }
-}
-*/
 .alignementDroite {
   position: absolute;
   bottom: 0;
@@ -70,13 +21,16 @@
   bottom: 50%;
   top: 0;
   width: 100%; }
+  .alignementGauche img {
+    display: none; }
+  .alignementGauche a span, .alignementGauche a img {
+    vertical-align: middle; }
+  .alignementGauche a img {
+    max-height: 100px; }
 
 .container {
   position: relative;
   margin-top: 9em; }
-
-.alignementGauche a {
-  display: none; }
 
 .menuNavigation {
   text-decoration: none;
@@ -88,11 +42,24 @@
     font-family: "Neuropolitical";
     font-size: 12px; }
 
+section {
+  display: block;
+  height: 480px; }
+
 header .placementIconeMenu {
   width: 100%;
   height: 100%; }
   header .placementIconeMenu span, header .placementIconeMenu img {
     vertical-align: middle; }
+header a {
+  display: inline;
+  text-decoration: none; }
+header a:link {
+  color: black; }
+header a:visited {
+  color: black; }
+header a:hover {
+  color: #3399FF; }
 header .valign {
   height: 100%;
   display: inline-block;
@@ -115,24 +82,17 @@ header .flexGauche {
     max-height: 35px;
     height: 100%;
     width: auto; }
-
-#placementLogoHeader {
-  width: 100%;
-  height: auto; }
-  #placementLogoHeader span, #placementLogoHeader img {
-    vertical-align: middle; }
-  #placementLogoHeader img {
-    max-height: 100px; }
-  #placementLogoHeader p {
-    text-align: center;
-    width: 100%;
+  header .flexGauche h1 {
     font-family: "Aero";
-    font-size: 35px;
-    margin: 0;
-    margin-top: 20px; }
+    font-size: 35px; }
 
-#titreHeader {
-  display: none; }
+.imgBackground {
+  width: 100%;
+  height: 100%;
+  background-image: url(../ressources/img/3300.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30%; }
 
 footer {
   position: fixed;

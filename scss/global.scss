@@ -4,6 +4,11 @@
 //BG Commun
 @import "class/_videoBackGround.scss";
 
+body
+{
+  margin :0;
+}
+
 //header
 .alignementDroite
 {
@@ -21,20 +26,30 @@
   bottom: 50%;
   top: 0;
   width : 100%;
+
+  img
+  {
+    display: none;
+  }
+
+  a
+  {
+    span,img
+    {
+      vertical-align: middle;
+    }
+
+    img
+    {
+      max-height: 100px;
+    }
+  }
 }
 
 .container
 {
   position : relative;
   margin-top: 9em;
-}
-
-.alignementGauche
-{
-  a
-  {
-    display: none;
-  }
 }
 
 .menuNavigation
@@ -52,6 +67,12 @@
   }
 }
 
+section
+{
+  display: block;
+  height: 480px;
+}
+
 header
 {
     .placementIconeMenu
@@ -63,6 +84,27 @@ header
           {
             vertical-align: middle;
           }
+      }
+
+      a
+      {
+        display: inline;
+        text-decoration: none;
+      }
+
+      a:link
+      {
+        color : $mainColor;
+      }
+
+      a:visited
+      {
+        color : $mainColor;
+      }
+
+      a:hover
+      {
+        color : #3399FF;
       }
 
       .valign
@@ -102,39 +144,24 @@ header
           height: 100%;
           width: auto;
         }
+
+        h1
+        {
+          font-family: $fontTitre;
+          font-size: 35px;
+        }
       }
 }
 
-
-#placementLogoHeader
+//Présentation
+.imgBackground
 {
   width : 100%;
-  height: auto;
-
-  span,img
-  {
-    vertical-align: middle;
-  }
-
-  img
-  {
-    max-height: 100px;
-  }
-
-  p
-  {
-    text-align: center;
-    width: 100%;
-    font-family: $fontTitre;
-    font-size: 35px;
-    margin: 0;
-    margin-top: 20px;
-  }
-}
-
-#titreHeader
-{
-  display: none;
+  height: 100%;
+  background-image: url(../ressources/img/3300.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30%;
 }
 
 //footer
